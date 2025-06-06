@@ -19,15 +19,15 @@ def snooze_alarm():
     winsound.Beep(10000,1000)
 
 def stop_alarm():
-    print("Alarm stopped")
+    print("Alarm stopped...")
 
 while True:
     print("Options:")
-    print("Enter '0' to view the current time")
-    print("Enter '1' to set an alarm")
-    print("Enter '2' to snooze the alarm")
-    print("Enter '3' to stop the alarm")
-    print("Enter '4' to exit")
+    print("Enter 0 to view the current time")
+    print("Enter 1 to set an alarm")
+    print("Enter 2 to snooze the alarm")
+    print("Enter 3 to stop the alarm")
+    print("Enter 4 to exit")
     choice = input(": ")
     if choice=='0':
         print(time.strftime("%d-%m-%Y %H:%M:%S"),end="\r")
